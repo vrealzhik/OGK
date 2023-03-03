@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 17px;
+}
+.nav__mail {
+  color: #212864;
+  text-decoration: underline;
+}
+.nav__info {
+  display: flex;
+  align-items: center;
+  gap: 115px;
+}
+.nav__info_lk-link {
+  color: #212864;
+}
+.nav__info_phone {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+.nav__info_phone-link {
+  color: #212864;
+}
+.nav__info_contacts {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.top {
+  height: 57px;
+  background-color: #15193D;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top_link {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.header {
+  background-image: linear-gradient(rgba(21, 25, 61, 0.6), rgba(21, 25, 61, 0.35)), url(/img/foto-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+}
+.header__heading_title {
+  padding-top: 200px;
+  padding-bottom: 30px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 68px;
+  line-height: 55px;
+  color: #FFFFFF;
+}
+.header__heading_about {
+  width: 470px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.text_title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 51px;
+}
+
+.text_content {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 17px;
+}
+
+.mak_link {
+  padding-right: 20px;
+  color: #fff;
+}
+
+.bodyOf {
+  display: flex;
+  padding: 0 px;
+  min-height: 50vh;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
+.wrapper {
+  display: flex;
+  max-width: 1200px;
+  position: relative;
+}
+
+.wrapper span {
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+
+.wrapper span:active {
+  transform: translateY(-50%) scale(0.9);
+}
+
+.wrapper span:hover {
+  background: #f2f2f2;
+}
+
+.wrapper span:first-child {
+  left: -22px;
+  display: none;
+}
+
+.wrapper span:last-child {
+  right: -22px;
+}
+
+.wrapper .carousel {
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+.carousel.dragging {
+  cursor: grab;
+  scroll-behavior: auto;
+}
+
+.carousel.dragging img {
+  pointer-events: none;
+}
+
+.carousel img {
+  height: 330px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  margin-left: 14px;
+  width: 33.3333333333%;
+}
+
+.carousel img:first-child {
+  margin-left: 0px;
+}
+
+@media screen and (max-width: 900px) {
+  .carousel img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .carousel img {
+    width: 100%;
+  }
+}
+.bottom {
+  background: #22242E;
+}
+
+.footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 17px;
+  color: white;
+}
+.footer__mail {
+  color: white;
+  text-decoration: underline;
+}
+.footer__contacts {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+.footer__phone {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+.footer__phone-link {
+  color: white;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 17px;
+  color: white;
+  gap: 10px;
+  padding-bottom: 30px;
+}/*# sourceMappingURL=style.css.map */
