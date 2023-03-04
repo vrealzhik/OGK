@@ -71,7 +71,226 @@ a {
   color: #CECECE;
   text-align: center;
 }
+.header__content_rad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  background: radial-gradient(ellipse closest-side at center, #000000 10.42%, rgba(0, 0, 0, 0.29375) 79.69%, rgba(0, 0, 0, 0) 100%);
+}
+.header__content_btn {
+  margin-top: 15px;
+  width: 250px;
+  height: 54px;
+  background: #DBA833;
+  border-radius: 5px;
+  border: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+}
 .header__bot {
   background: linear-gradient(180deg, rgba(44, 44, 44, 0) 0%, #2C2C2C 100%);
   height: 200px;
+}
+
+.lk {
+  color: #DBA833;
+}
+
+.bodyOf {
+  display: flex;
+  min-height: 50vh;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
+.wrapper {
+  padding-left: 70px;
+  padding-right: 70px;
+  display: flex;
+  max-width: 1200px;
+  position: relative;
+}
+
+.wrapper span {
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+
+.wrapper span:active {
+  transform: translateY(-50%) scale(0.9);
+}
+
+.wrapper span:hover {
+  background: #f2f2f2;
+}
+
+.wrapper span:first-child {
+  left: -22px;
+  display: none;
+}
+
+.wrapper span:last-child {
+  right: -22px;
+}
+
+.wrapper .carousel {
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+.carousel.dragging {
+  cursor: grab;
+  scroll-behavior: auto;
+}
+
+.carousel.dragging img {
+  pointer-events: none;
+}
+
+.carousel img {
+  height: 330px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  margin-left: 14px;
+  width: 33.3333333333%;
+}
+
+.carousel img:first-child {
+  margin-left: 0px;
+}
+
+@media screen and (max-width: 900px) {
+  .carousel img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .carousel img {
+    width: 100%;
+  }
+}
+.gallery {
+  display: flex;
+  justify-content: space-around;
+}
+.gallery__btn {
+  width: 250px;
+  height: 54px;
+  background: #DBA833;
+  border: none;
+  border-radius: 5px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: black;
+}
+
+.mak_link {
+  padding-right: 20px;
+  color: #DBA833;
+}
+
+.gar {
+  margin-top: 50px;
+  height: 400px;
+  background: #1F1F1F;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.gar__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  text-align: center;
+  color: #4F4F4F;
+}
+.gar__btn {
+  margin-top: 15px;
+  width: 250px;
+  height: 54px;
+  background: #DBA833;
+  border-radius: 5px;
+  border: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+  border-top: 1px solid #4F4F4F;
+  align-items: center;
+}
+.footer__square {
+  display: inline-block;
+  height: 78px;
+  width: 78px;
+  background-color: #DBA833;
+}
+.footer__time {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #5B5B5B;
+}
+.footer__cont {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #5B5B5B;
+}
+.footer__btn {
+  background-color: white;
+  border: 2px solid #B6B6B6;
+  border-radius: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #B6B6B6;
+  width: 175px;
+  height: 86px;
 }/*# sourceMappingURL=var2.css.map */
