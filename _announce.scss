@@ -1,0 +1,39 @@
+.news {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    &__content {
+        border-top: 1px solid #975A1A;
+
+        &_title {
+            margin-top: 12px;
+            margin-bottom: 8px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        &_text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 17px;
+            margin-bottom: 8px;
+        }
+
+        &_btn {
+            margin-bottom: 12px;
+            border: none;
+            background-color: #975A1A;
+            color: white;
+            height: 25px;
+            width: 102px;
+            transition: 0.3s;
+        }
+
+        &_btn:hover {
+            background-color: #160C07;
+        }
+    }
+}
