@@ -1,0 +1,22 @@
+.text {
+    &__general {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        margin-top: 40px;
+    }
+    &__list {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 17px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+        &_element {
+            margin-top: 8px;
+        }
+    }
+
+}
